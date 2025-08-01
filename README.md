@@ -2,7 +2,12 @@
 This is a small programm to convert waypoint .cup files, mainly used in gliding for airports...
 into the older LX .txt format, so they can be imported in LXe and used on the LX7000 (Only select USER in the States Tab).
 
-CUPConverter is written using Qt. You can get Qt at https://www.qt.io/
+This application is licensed under the GNU General Public License v3.0.
+
+It uses the Qt Toolkit, which is available under the GNU General Public License.
+You can download Qt source code from https://download.qt.io/
+
+You are free to modify and redistribute this application under the terms of the GPL.
 
 ## Documentation
 For Documentation check the folder "Documentation"
