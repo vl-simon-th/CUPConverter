@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditAirportDialog</class>
+ <widget class="QDialog" name="EditAirportDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>591</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="inputGridLayout">
+     <item row="4" column="0">
+      <widget class="QLabel" name="elevLabel">
+       <property name="text">
+        <string>elev</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <spacer name="topVerticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLineEdit" name="rwlenLineEdit"/>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="styleLabel">
+       <property name="text">
+        <string>style</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="elevLineEdit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="freqLabel">
+       <property name="text">
+        <string>freq</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="lonLineEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="codeLabel">
+       <property name="text">
+        <string>code</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="latLineEdit"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="codeLineEdit"/>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLineEdit" name="descLineEdit"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="rwdirLabel">
+       <property name="text">
+        <string>rwdir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLineEdit" name="countryLineEdit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="nameLabel">
+       <property name="text">
+        <string>name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <spacer name="middleVerticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="latLabel">
+       <property name="text">
+        <string>lat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <spacer name="downVerticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="countryLabel">
+       <property name="text">
+        <string>country</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="4">
+      <widget class="QDialogButtonBox" name="acceptButton">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="descLabel">
+       <property name="text">
+        <string>desc</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="rwdirLineEdit"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="nameLineEdit"/>
+     </item>
+     <item row="7" column="4">
+      <widget class="QComboBox" name="styleComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <item>
+        <property name="text">
+         <string>Unknown</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Waypoint</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Airfield with Grass Runway</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Outlanding</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gliding Airfield</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Airfield with Solid Runway</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mountain Pass</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mountain Top</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Transmitter Mast</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VOR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NDB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cooling Tower</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dam</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tunnel</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bridge</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Power Plant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Castle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Intersection</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="lonLabel">
+       <property name="text">
+        <string>lon</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="freqLineEdit">
+       <property name="minimumSize">
+        <size>
+         <width>207</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLabel" name="rwlenLabel">
+       <property name="text">
+        <string>rwlen</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="3">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>acceptButton</sender>
+   <signal>accepted()</signal>
+   <receiver>EditAirportDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>acceptButton</sender>
+   <signal>rejected()</signal>
+   <receiver>EditAirportDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
